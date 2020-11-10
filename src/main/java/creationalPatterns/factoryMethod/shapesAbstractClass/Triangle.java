@@ -3,7 +3,7 @@ package creationalPatterns.factoryMethod.shapesAbstractClass;
 public class Triangle extends Figure {
 
     @Override
-    public float getArea() {
-        return getBase() * getHeight() / 2;
+    public double getArea() {
+        return getBase() * getHeight() / 2.0;
     }
 }

@@ -3,7 +3,7 @@ package creationalPatterns.factoryMethod.shapesAbstractClass;
 public class Rectangle extends Figure {
 
     @Override
-    public float getArea() {
+    public double getArea() {
         return getBase() * getHeight();
     }
 }

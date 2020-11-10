@@ -1,25 +1,25 @@
 package creationalPatterns.factoryMethod.shapesAbstractClass;
 
 public abstract class Figure {
-    private float base;
-    private float height;
+    private double base;
+    private double height;
     private String name;
 
-    public abstract float getArea();
+    public abstract double getArea();
 
-    public float getBase() {
+    public double getBase() {
         return base;
     }
 
-    public void setBase(float base) {
+    public void setBase(double base) {
         this.base = base;
     }
 
-    public float getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(float height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
