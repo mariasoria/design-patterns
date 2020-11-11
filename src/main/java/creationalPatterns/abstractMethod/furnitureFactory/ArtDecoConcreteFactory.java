@@ -1,6 +1,6 @@
 package creationalPatterns.abstractMethod.furnitureFactory;
 
-public class ArtDecoAbstractFactory implements Factory {
+public class ArtDecoConcreteFactory implements AbstractFactory {
     @Override
     public Chair createChair() {
         Chair artDecoChair = new ArtDecoChair();

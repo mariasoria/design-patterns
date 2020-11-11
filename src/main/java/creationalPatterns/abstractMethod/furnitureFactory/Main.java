@@ -2,13 +2,13 @@ package creationalPatterns.abstractMethod.furnitureFactory;
 
 public class Main {
 
-    public static String createFurniture(String style, String type) {
+    public static String createFurniture(String style, String pieceOfFurniture) {
         if (style.equals("Modern")) {
-            ModernAbstractFactory modernFactory = new ModernAbstractFactory();
-            if(type.equals("Chair")) {
+            ModernConcreteFactory modernFactory = new ModernConcreteFactory();
+            if(pieceOfFurniture.equals("Chair")) {
                 Chair modernChair = modernFactory.createChair();
                 return modernChair.getType();
-            } else if (type.equals("Sofa")) {
+            } else if (pieceOfFurniture.equals("Sofa")) {
                 Sofa modernSofa = modernFactory.createSofa();
                 return modernSofa.getType();
             } else {
@@ -16,11 +16,11 @@ public class Main {
                 return modernCoffeeTable.getType();
             }
         } else if (style.equals("ArtDeco")) {
-            ArtDecoAbstractFactory artDecoFactory = new ArtDecoAbstractFactory();
-            if(type.equals("Chair")) {
+            ArtDecoConcreteFactory artDecoFactory = new ArtDecoConcreteFactory();
+            if(pieceOfFurniture.equals("Chair")) {
                 Chair artDecoChair = artDecoFactory.createChair();
                 return artDecoChair.getType();
-            } else if (type.equals("Sofa")) {
+            } else if (pieceOfFurniture.equals("Sofa")) {
                 Sofa artDecoSofa = artDecoFactory.createSofa();
                 return artDecoSofa.getType();
             } else {
@@ -28,11 +28,11 @@ public class Main {
                 return artDecoCoffeeTable.getType();
             }
         } else {
-            VictorianAbstractFactory victorianFactory = new VictorianAbstractFactory();
-            if(type.equals("Chair")) {
+            VictorianConcreteFactory victorianFactory = new VictorianConcreteFactory();
+            if(pieceOfFurniture.equals("Chair")) {
                 Chair victorianChair = victorianFactory.createChair();
                 return victorianChair.getType();
-            } else if (type.equals("Sofa")) {
+            } else if (pieceOfFurniture.equals("Sofa")) {
                 Sofa victorianSofa = victorianFactory.createSofa();
                 return victorianSofa.getType();
             } else {

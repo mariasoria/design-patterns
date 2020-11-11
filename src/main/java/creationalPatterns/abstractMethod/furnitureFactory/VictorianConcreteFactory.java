@@ -1,6 +1,6 @@
 package creationalPatterns.abstractMethod.furnitureFactory;
 
-public class VictorianAbstractFactory implements Factory {
+public class VictorianConcreteFactory implements AbstractFactory {
     @Override
     public Chair createChair() {
         Chair victorianChair = new VictorianChair();
