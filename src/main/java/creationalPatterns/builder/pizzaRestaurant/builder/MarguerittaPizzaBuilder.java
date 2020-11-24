@@ -1,6 +1,6 @@
 package creationalPatterns.builder.pizzaRestaurant.builder;
 
-import creationalPatterns.builder.pizzaRestaurant.pizzas.MarguerittaPizza;
+import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class MarguerittaPizzaBuilder implements PizzaBuilder {
         this.toppings.add(topping);
     }
 
-    public MarguerittaPizza makePizza() {
-        return new MarguerittaPizza (dough, sauce, toppings);
+    public Pizza makePizza() {
+        return new Pizza (dough, sauce, toppings);
     }
 }

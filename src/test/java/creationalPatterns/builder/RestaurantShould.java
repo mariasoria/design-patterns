@@ -3,8 +3,7 @@ package creationalPatterns.builder;
 import creationalPatterns.builder.pizzaRestaurant.builder.FourCheesePizzaBuilder;
 import creationalPatterns.builder.pizzaRestaurant.builder.MarguerittaPizzaBuilder;
 import creationalPatterns.builder.pizzaRestaurant.director.Cook;
-import creationalPatterns.builder.pizzaRestaurant.pizzas.FourCheesePizza;
-import creationalPatterns.builder.pizzaRestaurant.pizzas.MarguerittaPizza;
+import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,7 +16,7 @@ public class RestaurantShould {
         MarguerittaPizzaBuilder pizzaMarguerittaBuilder = new MarguerittaPizzaBuilder();
         director.makeMarguerittaPizza(pizzaMarguerittaBuilder);
 
-        MarguerittaPizza pizza = pizzaMarguerittaBuilder.makePizza();
+        Pizza pizza = pizzaMarguerittaBuilder.makePizza();
         assertThat(pizza.getDough()).isEqualTo("vegetal");
         assertThat(pizza.getSauce()).isEqualTo("tomato");
     }
@@ -27,7 +26,7 @@ public class RestaurantShould {
         FourCheesePizzaBuilder pizzaFourCheeseBuilder = new FourCheesePizzaBuilder();
         director.makeFourCheesePizza(pizzaFourCheeseBuilder);
 
-        FourCheesePizza pizza = pizzaFourCheeseBuilder.makePizza();
+        Pizza pizza = pizzaFourCheeseBuilder.makePizza();
         assertThat(pizza.getDough()).isEqualTo("wheat");
         assertThat(pizza.getSauce()).isEqualTo("tomato");
     }

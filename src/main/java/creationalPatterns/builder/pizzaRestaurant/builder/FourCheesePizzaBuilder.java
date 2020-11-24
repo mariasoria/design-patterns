@@ -1,6 +1,6 @@
 package creationalPatterns.builder.pizzaRestaurant.builder;
 
-import creationalPatterns.builder.pizzaRestaurant.pizzas.FourCheesePizza;
+import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class FourCheesePizzaBuilder implements PizzaBuilder {
         this.toppings.add(topping);
     }
 
-    public FourCheesePizza makePizza() {
-        return new FourCheesePizza (dough, sauce, toppings);
+    public Pizza makePizza() {
+        return new Pizza(dough, sauce, toppings);
     }
 }

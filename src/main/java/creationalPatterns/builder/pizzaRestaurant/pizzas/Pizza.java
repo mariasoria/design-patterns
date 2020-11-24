@@ -2,12 +2,12 @@ package creationalPatterns.builder.pizzaRestaurant.pizzas;
 
 import java.util.ArrayList;
 
-public class FourCheesePizza {
+public class Pizza {
     private String dough;
     private String sauce;
     private ArrayList<String> toppings;
 
-    public FourCheesePizza(String dough, String sauce, ArrayList<String> toppings) {
+    public Pizza(String dough, String sauce, ArrayList<String> toppings) {
         this.dough = dough;
         this.sauce = sauce;
         this.toppings = toppings;
