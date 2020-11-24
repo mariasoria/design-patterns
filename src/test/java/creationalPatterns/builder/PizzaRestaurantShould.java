@@ -1,14 +1,14 @@
 package creationalPatterns.builder;
 
-import creationalPatterns.builder.pizzaRestaurant.builder.FourCheesePizzaBuilder;
-import creationalPatterns.builder.pizzaRestaurant.builder.MarguerittaPizzaBuilder;
+import creationalPatterns.builder.pizzaRestaurant.builders.FourCheesePizzaBuilder;
+import creationalPatterns.builder.pizzaRestaurant.builders.MarguerittaPizzaBuilder;
 import creationalPatterns.builder.pizzaRestaurant.director.Cook;
 import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class RestaurantShould {
+public class PizzaRestaurantShould {
     Cook director = new Cook();
 
     @Test

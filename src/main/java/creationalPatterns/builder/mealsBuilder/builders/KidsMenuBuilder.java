@@ -1,39 +1,43 @@
 package creationalPatterns.builder.mealsBuilder.builders;
 
 import creationalPatterns.builder.mealsBuilder.components.*;
-import creationalPatterns.builder.mealsBuilder.menu.KidsMenu;
+import creationalPatterns.builder.mealsBuilder.menu.Menu;
+
+import static creationalPatterns.builder.mealsBuilder.components.Dessert.ICE_CREAM;
+import static creationalPatterns.builder.mealsBuilder.components.Drink.JUICE;
+import static creationalPatterns.builder.mealsBuilder.components.MainDish.BURGER;
+import static creationalPatterns.builder.mealsBuilder.components.SideDish.MASH_POTATOES;
+import static creationalPatterns.builder.mealsBuilder.components.Toy.FIGURE;
 
 public class KidsMenuBuilder implements MealBuilder {
     private Dish mainDish;
     private Dessert dessert;
     private Drink drink;
     private Toy toy;
+    private Menu menu = new Menu();
 
     @Override
-    public void setFirstDish(Dish mainDish) {
-        this.mainDish = mainDish;
-    }
-
-    @Override
-    public void setSecondDish(Dish mainDish) {
+    public void setFirstDish() {
+        menu.setFirstDish(new Dish(BURGER, MASH_POTATOES));
     }
 
     @Override
-    public void setDrink(Drink drink) {
-        this.drink = drink;
+    public void setDrink() {
+        menu.setDrink(JUICE);
     }
 
     @Override
-    public void setDessert(Dessert dessert) {
-        this.dessert = dessert;
+    public void setDessert() {
+        menu.setDessert(ICE_CREAM);
     }
 
     @Override
-    public void setToy(Toy toy) {
-        this.toy = toy;
+    public void setToy() {
+        menu.setToy(FIGURE);
     }
 
-    public KidsMenu getMenu() {
-        return new KidsMenu(mainDish, drink, dessert, toy);
+    public Menu getMenu() {
+        return menu;
     }
+
 }

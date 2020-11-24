@@ -2,19 +2,14 @@ package creationalPatterns.builder.mealsBuilder.menu;
 
 import creationalPatterns.builder.mealsBuilder.components.*;
 
-public class WeekendMenu {
+public class Menu {
     private Dish firstDish;
     private Dish secondDish;
     private Drink drink;
     private Dessert dessert;
     private Toy toy;
 
-    public WeekendMenu(Dish firstDish, Dish secondDish, Drink drink, Dessert dessert, Toy toy) {
-        this.firstDish = firstDish;
-        this.secondDish = secondDish;
-        this.drink = drink;
-        this.dessert = dessert;
-        this.toy = toy;
+    public Menu() {
     }
 
     public Dish getFirstDish() {

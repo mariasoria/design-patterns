@@ -1,7 +1,13 @@
 package creationalPatterns.builder.mealsBuilder.builders;
 
 import creationalPatterns.builder.mealsBuilder.components.*;
-import creationalPatterns.builder.mealsBuilder.menu.WeekendMenu;
+import creationalPatterns.builder.mealsBuilder.menu.Menu;
+
+import static creationalPatterns.builder.mealsBuilder.components.Dessert.FRUIT;
+import static creationalPatterns.builder.mealsBuilder.components.Drink.BEER;
+import static creationalPatterns.builder.mealsBuilder.components.MainDish.KEBAB;
+import static creationalPatterns.builder.mealsBuilder.components.SideDish.VEGETABLES;
+import static creationalPatterns.builder.mealsBuilder.components.Toy.FIGURE;
 
 public class WeekendMenuBuilder implements MealBuilder {
     private Dish firstDish;
@@ -9,33 +15,30 @@ public class WeekendMenuBuilder implements MealBuilder {
     private Drink drink;
     private Dessert dessert;
     private Toy toy;
+    private Menu menu = new Menu();
 
     @Override
-    public void setFirstDish(Dish mainDish) {
-        this.firstDish = mainDish;
-    }
-
-    @Override
-    public void setSecondDish(Dish secondDish) {
-        this.secondDish = secondDish;
+    public void setFirstDish() {
+        menu.setFirstDish(new Dish(KEBAB, VEGETABLES));
     }
 
     @Override
-    public void setDrink(Drink drink) {
-        this.drink = drink;
+    public void setDrink() {
+        menu.setDrink(BEER);
     }
 
     @Override
-    public void setDessert(Dessert dessert) {
-        this.dessert = dessert;
+    public void setDessert() {
+        menu.setDessert(FRUIT);
     }
 
     @Override
-    public void setToy(Toy toy) {
-        this.toy = toy;
+    public void setToy() {
+        menu.setToy(FIGURE);
     }
 
-    public WeekendMenu getMenu() {
-        return new WeekendMenu(firstDish, secondDish, drink, dessert, toy);
+    public Menu getMenu() {
+        return menu;
     }
+
 }

@@ -1,6 +1,6 @@
 package creationalPatterns.builder.pizzaRestaurant.director;
 
-import creationalPatterns.builder.pizzaRestaurant.builder.PizzaBuilder;
+import creationalPatterns.builder.pizzaRestaurant.builders.PizzaBuilder;
 
 public class Cook {
 

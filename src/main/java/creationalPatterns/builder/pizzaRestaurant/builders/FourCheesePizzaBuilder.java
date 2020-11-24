@@ -1,4 +1,4 @@
-package creationalPatterns.builder.pizzaRestaurant.builder;
+package creationalPatterns.builder.pizzaRestaurant.builders;
 
 import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 
