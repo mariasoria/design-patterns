@@ -1,8 +1,6 @@
 package creationalPatterns.builder;
 
 import creationalPatterns.builder.mealsBuilder.builders.DailyMenuBuilder;
-import creationalPatterns.builder.mealsBuilder.builders.KidsMenuBuilder;
-import creationalPatterns.builder.mealsBuilder.builders.MealBuilder;
 import creationalPatterns.builder.mealsBuilder.builders.WeekendMenuBuilder;
 import creationalPatterns.builder.mealsBuilder.director.Director;
 import creationalPatterns.builder.mealsBuilder.menu.DailyMenu;

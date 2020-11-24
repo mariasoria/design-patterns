@@ -28,6 +28,7 @@ public class KidsMenuBuilder implements MealBuilder {
         this.dessert = dessert;
     }
 
+    @Override
     public void setToy(Toy toy) {
         this.toy = toy;
     }

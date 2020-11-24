@@ -8,10 +8,21 @@ public class WeekendMenuBuilder implements MealBuilder {
     private Dish secondDish;
     private Drink drink;
     private Dessert dessert;
+    private Toy toy;
 
     @Override
     public void setFirstDish(Dish mainDish) {
         this.firstDish = mainDish;
+    }
+
+    @Override
+    public void setSecondDish(Dish secondDish) {
+        this.secondDish = secondDish;
+    }
+
+    @Override
+    public void setDrink(Drink drink) {
+        this.drink = drink;
     }
 
     @Override
@@ -21,18 +32,10 @@ public class WeekendMenuBuilder implements MealBuilder {
 
     @Override
     public void setToy(Toy toy) {
-    }
-
-    @Override
-    public void setDrink(Drink drink) {
-        this.drink = drink;
-    }
-
-    public void setSecondDish(Dish secondDish) {
-        this.secondDish = secondDish;
+        this.toy = toy;
     }
 
     public WeekendMenu getMenu() {
-        return new WeekendMenu(firstDish, secondDish, drink, dessert);
+        return new WeekendMenu(firstDish, secondDish, drink, dessert, toy);
     }
 }
