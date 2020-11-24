@@ -10,11 +10,6 @@ import static creationalPatterns.builder.mealsBuilder.components.SideDish.VEGETA
 import static creationalPatterns.builder.mealsBuilder.components.Toy.FIGURE;
 
 public class WeekendMenuBuilder implements MealBuilder {
-    private Dish firstDish;
-    private Dish secondDish;
-    private Drink drink;
-    private Dessert dessert;
-    private Toy toy;
     private Menu menu = new Menu();
 
     @Override

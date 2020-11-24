@@ -5,9 +5,7 @@ import creationalPatterns.builder.pizzaRestaurant.pizzas.Pizza;
 import java.util.ArrayList;
 
 public class MarguerittaPizzaBuilder implements PizzaBuilder {
-    private String dough;
-    private String sauce;
-    private ArrayList<String> toppings = new ArrayList<String>();
+    private ArrayList<String> toppings = new ArrayList<>();
     private Pizza pizza = new Pizza();
 
     @Override

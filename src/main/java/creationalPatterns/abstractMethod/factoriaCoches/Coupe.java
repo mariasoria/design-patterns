@@ -27,13 +27,4 @@ public class Coupe implements Coche {
             return 0;
         }
 
-        @Override
-        public void encenderLuces() {
-
-        }
-
-        @Override
-        public void apagarLuces() {
-
-        }
 }

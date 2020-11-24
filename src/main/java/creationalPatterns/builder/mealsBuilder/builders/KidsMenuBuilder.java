@@ -10,10 +10,6 @@ import static creationalPatterns.builder.mealsBuilder.components.SideDish.MASH_P
 import static creationalPatterns.builder.mealsBuilder.components.Toy.FIGURE;
 
 public class KidsMenuBuilder implements MealBuilder {
-    private Dish mainDish;
-    private Dessert dessert;
-    private Drink drink;
-    private Toy toy;
     private Menu menu = new Menu();
 
     @Override

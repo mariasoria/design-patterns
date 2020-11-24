@@ -12,8 +12,4 @@ public interface Coche {
 
         public float frenar();
 
-        public void encenderLuces();
-
-        public void apagarLuces();
-
 }

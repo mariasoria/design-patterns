@@ -3,19 +3,16 @@ package creationalPatterns.abstractMethod.furnitureFactory;
 public class ModernConcreteFactory implements AbstractFactory {
     @Override
     public Chair createChair() {
-        Chair modernChair = new ModernChair();
-        return modernChair;
+        return new ModernChair();
     }
 
     @Override
     public Sofa createSofa() {
-        Sofa modernSofa = new ModernSofa();
-        return modernSofa;
+        return new ModernSofa();
     }
 
     @Override
     public CoffeeTable createCoffeeTable() {
-        CoffeeTable modernCoffeeTable = new ModernCoffeeTable();
-        return modernCoffeeTable;
+        return new ModernCoffeeTable();
     }
 }

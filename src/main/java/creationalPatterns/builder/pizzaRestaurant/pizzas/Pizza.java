@@ -7,8 +7,7 @@ public class Pizza {
     private String sauce;
     private ArrayList<String> toppings;
 
-    public Pizza() {
-    }
+    public Pizza() {}
 
     public String getDough() {
         return dough;

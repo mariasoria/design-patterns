@@ -27,13 +27,4 @@ public class Berlina implements Coche {
         return 0;
     }
 
-    @Override
-    public void encenderLuces() {
-
-    }
-
-    @Override
-    public void apagarLuces() {
-
-    }
 }

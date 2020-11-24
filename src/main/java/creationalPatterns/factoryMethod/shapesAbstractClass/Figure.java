@@ -25,7 +25,7 @@ public abstract class Figure {
 
     public String getName() {
         return "I am a " + this.name;
-    };
+    }
 
     public void setName(String name) {
         this.name = name;

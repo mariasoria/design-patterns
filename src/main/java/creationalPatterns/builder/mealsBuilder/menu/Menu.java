@@ -9,8 +9,7 @@ public class Menu {
     private Dessert dessert;
     private Toy toy;
 
-    public Menu() {
-    }
+    public Menu() {}
 
     public Dish getFirstDish() {
         return firstDish;
