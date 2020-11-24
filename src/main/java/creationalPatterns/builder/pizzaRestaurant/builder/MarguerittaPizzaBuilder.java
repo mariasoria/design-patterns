@@ -8,23 +8,26 @@ public class MarguerittaPizzaBuilder implements PizzaBuilder {
     private String dough;
     private String sauce;
     private ArrayList<String> toppings = new ArrayList<String>();
+    private Pizza pizza = new Pizza();
 
     @Override
-    public void addDough(String dough) {
-        this.dough = dough;
+    public void addDough() {
+        pizza.setDough("vegetal");
     }
 
     @Override
-    public void addSauce(String sauce) {
-        this.sauce = sauce;
+    public void addSauce() {
+        pizza.setSauce("tomato");
     }
 
     @Override
-    public void addTopping(String topping) {
-        this.toppings.add(topping);
+    public void addTopping() {
+        this.toppings.add("cheese");
+        this.toppings.add("oregano");
+        pizza.setToppings(this.toppings);
     }
 
     public Pizza makePizza() {
-        return new Pizza (dough, sauce, toppings);
+        return pizza;
     }
 }
